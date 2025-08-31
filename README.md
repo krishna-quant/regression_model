@@ -23,3 +23,12 @@ Predict next-day SPY open-to-open return using a multiple linear regression on g
 - README.md # project description
 - .gitignore # ignore cache/data/etc.
 - indicepanel.csv # created automatically when live=True
+
+
+## Installation
+```bash
+git clone https://github.com/yourusername/your-repo-name.git
+cd your-repo-name
+pip install -r requirements.txt
+
+
