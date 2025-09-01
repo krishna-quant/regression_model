@@ -35,9 +35,10 @@ py -m pip install -r requirements.txt
 
 # Or (macOS/Linux)
 python3 -m pip install -r requirements.txt
-
+```
 
 ## Usage
+```python
 # Live (recommended): downloads data and creates a local indicepanel.csv snapshot
 
 # in main or call
@@ -48,21 +49,21 @@ X, y = download_global_data(live=True)
 
 X, y = download_global_data(live=False)
 
-Run the script:
+# Run the script
 # Windows
 py regression_model.py
 
 # macOS/Linux
 python3 regression_model.py
+```
 
-
-Licence
-
+## license
 MIT
 
-Contact
-
+## Contact
 Krishnakaanth Shubin - krishnakaanthshubin@gmail.com
+
+
 
 
 
