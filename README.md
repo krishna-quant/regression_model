@@ -22,13 +22,48 @@ Predict next-day SPY open-to-open return using a multiple linear regression on g
 - requirements.txt # dependencies
 - README.md # project description
 - .gitignore # ignore cache/data/etc.
-- indicepanel.csv # created automatically when live=True
 
 
 ## Installation
 ```bash
-git clone https://github.com/yourusername/your-repo-name.git
+git clone https://github.com/krishna-quant/regression_model.git
 cd your-repo-name
 pip install -r requirements.txt
+
+# Install dependencies (Windows)
+py -m pip install -r requirements.txt
+
+# Or (macOS/Linux)
+python3 -m pip install -r requirements.txt
+
+
+## Usage
+# Live (recommended): downloads data and creates a local indicepanel.csv snapshot
+
+# in main or call
+X, y = download_global_data(live=True)
+# then run main -> py regression_model.py
+
+# Static / reproducible: use previously saved snapshot
+
+X, y = download_global_data(live=False)
+
+Run the script:
+# Windows
+py regression_model.py
+
+# macOS/Linux
+python3 regression_model.py
+
+
+Licence
+
+MIT
+
+Contact
+
+Krishnakaanth Shubin - krishnakaanthshubin@gmail.com
+
+
 
 
