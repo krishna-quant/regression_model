@@ -57,7 +57,7 @@ py regression_model.py
 python3 regression_model.py
 ```
 
-## license
+## License
 MIT
 
 ## Contact
